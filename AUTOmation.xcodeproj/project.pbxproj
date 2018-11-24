@@ -7,14 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC044EE721A977D700544487 /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC044EE621A977D700544487 /* SharedAssets.xcassets */; };
 		EC6B3FF521A8934000F05E61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B3FF421A8934000F05E61 /* AppDelegate.swift */; };
 		EC6B3FF721A8934000F05E61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B3FF621A8934000F05E61 /* ViewController.swift */; };
 		EC6B3FFA21A8934000F05E61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6B3FF821A8934000F05E61 /* Main.storyboard */; };
 		EC6B3FFC21A8934200F05E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6B3FFB21A8934200F05E61 /* Assets.xcassets */; };
 		EC6B3FFF21A8934200F05E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6B3FFD21A8934200F05E61 /* LaunchScreen.storyboard */; };
+		EC6B400B21A8937400F05E61 /* HMUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6B400621A8937200F05E61 /* HMUtilities.framework */; };
+		EC6B400C21A8937400F05E61 /* HMUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC6B400621A8937200F05E61 /* HMUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC6B400D21A8937400F05E61 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6B400721A8937200F05E61 /* CommonCrypto.framework */; };
+		EC6B400E21A8937400F05E61 /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC6B400721A8937200F05E61 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC6B400F21A8937400F05E61 /* AutoAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6B400821A8937300F05E61 /* AutoAPI.framework */; };
+		EC6B401021A8937400F05E61 /* AutoAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC6B400821A8937300F05E61 /* AutoAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC6B401121A8937400F05E61 /* HMCryptoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6B400921A8937300F05E61 /* HMCryptoKit.framework */; };
+		EC6B401221A8937400F05E61 /* HMCryptoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC6B400921A8937300F05E61 /* HMCryptoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC6B401321A8937400F05E61 /* HMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6B400A21A8937400F05E61 /* HMKit.framework */; };
+		EC6B401421A8937400F05E61 /* HMKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC6B400A21A8937400F05E61 /* HMKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC6B401A21A8944800F05E61 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B401921A8944800F05E61 /* Constants.swift */; };
+		EC6B401C21A8946300F05E61 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B401B21A8946300F05E61 /* Persistance.swift */; };
+		EC6B401E21A8949800F05E61 /* CommandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B401D21A8949800F05E61 /* CommandService.swift */; };
+		EC6B402321A896BC00F05E61 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6B402221A896BC00F05E61 /* Intents.framework */; };
+		EC6B405321A8ADD200F05E61 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B405221A8ADD200F05E61 /* IntentHandler.swift */; };
+		EC6B405721A8ADD200F05E61 /* GoToWorkIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC6B405021A8ADD200F05E61 /* GoToWorkIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC6B405C21A8AE1600F05E61 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EC6B405B21A8AE1600F05E61 /* Intents.intentdefinition */; };
+		EC6B405D21A8AEF900F05E61 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EC6B405B21A8AE1600F05E61 /* Intents.intentdefinition */; };
+		EC6B405F21A8AF9D00F05E61 /* GoToWorkIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B405E21A8AF9D00F05E61 /* GoToWorkIntentHandler.swift */; };
+		EC6B406021A8B2B000F05E61 /* CommandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B401D21A8949800F05E61 /* CommandService.swift */; };
+		ECEFFF1321A8B300005AEFE2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B401921A8944800F05E61 /* Constants.swift */; };
+		ECEFFF1421A8B303005AEFE2 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B401B21A8946300F05E61 /* Persistance.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EC6B405521A8ADD200F05E61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC6B3FE921A8934000F05E61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC6B404F21A8ADD200F05E61;
+			remoteInfo = GoToWorkIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC6B401521A8937400F05E61 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC6B400E21A8937400F05E61 /* CommonCrypto.framework in Embed Frameworks */,
+				EC6B401421A8937400F05E61 /* HMKit.framework in Embed Frameworks */,
+				EC6B400C21A8937400F05E61 /* HMUtilities.framework in Embed Frameworks */,
+				EC6B401021A8937400F05E61 /* AutoAPI.framework in Embed Frameworks */,
+				EC6B401221A8937400F05E61 /* HMCryptoKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6B404721A89A5F00F05E61 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EC6B405721A8ADD200F05E61 /* GoToWorkIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		EC044EE621A977D700544487 /* SharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedAssets.xcassets; sourceTree = "<group>"; };
 		EC6B3FF121A8934000F05E61 /* AUTOmation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AUTOmation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6B3FF421A8934000F05E61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC6B3FF621A8934000F05E61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,10 +85,40 @@
 		EC6B3FFB21A8934200F05E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC6B3FFE21A8934200F05E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC6B400021A8934200F05E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6B400621A8937200F05E61 /* HMUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HMUtilities.framework; sourceTree = "<group>"; };
+		EC6B400721A8937200F05E61 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CommonCrypto.framework; sourceTree = "<group>"; };
+		EC6B400821A8937300F05E61 /* AutoAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AutoAPI.framework; sourceTree = "<group>"; };
+		EC6B400921A8937300F05E61 /* HMCryptoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HMCryptoKit.framework; sourceTree = "<group>"; };
+		EC6B400A21A8937400F05E61 /* HMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HMKit.framework; sourceTree = "<group>"; };
+		EC6B401821A893E000F05E61 /* AUTOmation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AUTOmation.entitlements; sourceTree = "<group>"; };
+		EC6B401921A8944800F05E61 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EC6B401B21A8946300F05E61 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		EC6B401D21A8949800F05E61 /* CommandService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandService.swift; sourceTree = "<group>"; };
+		EC6B402221A896BC00F05E61 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		EC6B403221A89A5F00F05E61 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		EC6B405021A8ADD200F05E61 /* GoToWorkIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GoToWorkIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6B405221A8ADD200F05E61 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		EC6B405421A8ADD200F05E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6B405B21A8AE1600F05E61 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		EC6B405E21A8AF9D00F05E61 /* GoToWorkIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoToWorkIntentHandler.swift; sourceTree = "<group>"; };
+		EC983ED821A92CDC00B78071 /* GoToWorkIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoToWorkIntent.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EC6B3FEE21A8934000F05E61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6B402321A896BC00F05E61 /* Intents.framework in Frameworks */,
+				EC6B400D21A8937400F05E61 /* CommonCrypto.framework in Frameworks */,
+				EC6B401321A8937400F05E61 /* HMKit.framework in Frameworks */,
+				EC6B400B21A8937400F05E61 /* HMUtilities.framework in Frameworks */,
+				EC6B400F21A8937400F05E61 /* AutoAPI.framework in Frameworks */,
+				EC6B401121A8937400F05E61 /* HMCryptoKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6B404D21A8ADD200F05E61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,11 +128,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC044EE521A9777700544487 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EC044EE621A977D700544487 /* SharedAssets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EC0556C521A9AEE300670F6D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC983ED821A92CDC00B78071 /* GoToWorkIntent.entitlements */,
+				EC6B405421A8ADD200F05E61 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		EC6B3FE821A8934000F05E61 = {
 			isa = PBXGroup;
 			children = (
+				EC6B400821A8937300F05E61 /* AutoAPI.framework */,
+				EC6B400721A8937200F05E61 /* CommonCrypto.framework */,
+				EC6B400921A8937300F05E61 /* HMCryptoKit.framework */,
+				EC6B400A21A8937400F05E61 /* HMKit.framework */,
+				EC6B400621A8937200F05E61 /* HMUtilities.framework */,
+				EC044EE521A9777700544487 /* Shared */,
 				EC6B3FF321A8934000F05E61 /* AUTOmation */,
+				EC6B405121A8ADD200F05E61 /* GoToWorkIntent */,
 				EC6B3FF221A8934000F05E61 /* Products */,
+				EC6B402121A896BC00F05E61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				EC6B3FF121A8934000F05E61 /* AUTOmation.app */,
+				EC6B405021A8ADD200F05E61 /* GoToWorkIntent.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +173,54 @@
 		EC6B3FF321A8934000F05E61 /* AUTOmation */ = {
 			isa = PBXGroup;
 			children = (
+				EC6B405B21A8AE1600F05E61 /* Intents.intentdefinition */,
 				EC6B3FF421A8934000F05E61 /* AppDelegate.swift */,
 				EC6B3FF621A8934000F05E61 /* ViewController.swift */,
-				EC6B3FF821A8934000F05E61 /* Main.storyboard */,
-				EC6B3FFB21A8934200F05E61 /* Assets.xcassets */,
-				EC6B3FFD21A8934200F05E61 /* LaunchScreen.storyboard */,
-				EC6B400021A8934200F05E61 /* Info.plist */,
+				EC6B401B21A8946300F05E61 /* Persistance.swift */,
+				EC6B401D21A8949800F05E61 /* CommandService.swift */,
+				EC6B401921A8944800F05E61 /* Constants.swift */,
+				EC6B401621A8938700F05E61 /* Interface */,
+				EC6B401721A8939000F05E61 /* Resources */,
 			);
 			path = AUTOmation;
+			sourceTree = "<group>";
+		};
+		EC6B401621A8938700F05E61 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B3FF821A8934000F05E61 /* Main.storyboard */,
+				EC6B3FFD21A8934200F05E61 /* LaunchScreen.storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		EC6B401721A8939000F05E61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B401821A893E000F05E61 /* AUTOmation.entitlements */,
+				EC6B3FFB21A8934200F05E61 /* Assets.xcassets */,
+				EC6B400021A8934200F05E61 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC6B402121A896BC00F05E61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B402221A896BC00F05E61 /* Intents.framework */,
+				EC6B403221A89A5F00F05E61 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC6B405121A8ADD200F05E61 /* GoToWorkIntent */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B405221A8ADD200F05E61 /* IntentHandler.swift */,
+				EC6B405E21A8AF9D00F05E61 /* GoToWorkIntentHandler.swift */,
+				EC0556C521A9AEE300670F6D /* Resources */,
+			);
+			path = GoToWorkIntent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +233,35 @@
 				EC6B3FED21A8934000F05E61 /* Sources */,
 				EC6B3FEE21A8934000F05E61 /* Frameworks */,
 				EC6B3FEF21A8934000F05E61 /* Resources */,
+				EC6B401521A8937400F05E61 /* Embed Frameworks */,
+				EC6B404721A89A5F00F05E61 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EC6B405621A8ADD200F05E61 /* PBXTargetDependency */,
 			);
 			name = AUTOmation;
 			productName = AUTOmation;
 			productReference = EC6B3FF121A8934000F05E61 /* AUTOmation.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EC6B404F21A8ADD200F05E61 /* GoToWorkIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6B405821A8ADD200F05E61 /* Build configuration list for PBXNativeTarget "GoToWorkIntent" */;
+			buildPhases = (
+				EC6B404C21A8ADD200F05E61 /* Sources */,
+				EC6B404D21A8ADD200F05E61 /* Frameworks */,
+				EC6B404E21A8ADD200F05E61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoToWorkIntent;
+			productName = GoToWorkIntent;
+			productReference = EC6B405021A8ADD200F05E61 /* GoToWorkIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +275,22 @@
 				TargetAttributes = {
 					EC6B3FF021A8934000F05E61 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					EC6B404F21A8ADD200F05E61 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -113,6 +308,7 @@
 			projectRoot = "";
 			targets = (
 				EC6B3FF021A8934000F05E61 /* AUTOmation */,
+				EC6B404F21A8ADD200F05E61 /* GoToWorkIntent */,
 			);
 		};
 /* End PBXProject section */
@@ -122,9 +318,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC044EE721A977D700544487 /* SharedAssets.xcassets in Resources */,
 				EC6B3FFF21A8934200F05E61 /* LaunchScreen.storyboard in Resources */,
 				EC6B3FFC21A8934200F05E61 /* Assets.xcassets in Resources */,
 				EC6B3FFA21A8934000F05E61 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6B404E21A8ADD200F05E61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,12 +339,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6B405C21A8AE1600F05E61 /* Intents.intentdefinition in Sources */,
 				EC6B3FF721A8934000F05E61 /* ViewController.swift in Sources */,
+				EC6B401C21A8946300F05E61 /* Persistance.swift in Sources */,
 				EC6B3FF521A8934000F05E61 /* AppDelegate.swift in Sources */,
+				EC6B401A21A8944800F05E61 /* Constants.swift in Sources */,
+				EC6B401E21A8949800F05E61 /* CommandService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6B404C21A8ADD200F05E61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECEFFF1321A8B300005AEFE2 /* Constants.swift in Sources */,
+				EC6B405D21A8AEF900F05E61 /* Intents.intentdefinition in Sources */,
+				EC6B405F21A8AF9D00F05E61 /* GoToWorkIntentHandler.swift in Sources */,
+				EC6B405321A8ADD200F05E61 /* IntentHandler.swift in Sources */,
+				EC6B406021A8B2B000F05E61 /* CommandService.swift in Sources */,
+				ECEFFF1421A8B303005AEFE2 /* Persistance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC6B405621A8ADD200F05E61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC6B404F21A8ADD200F05E61 /* GoToWorkIntent */;
+			targetProxy = EC6B405521A8ADD200F05E61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EC6B3FF821A8934000F05E61 /* Main.storyboard */ = {
@@ -281,10 +510,16 @@
 		EC6B400421A8934200F05E61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AUTOmation/Resources/AUTOmation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RT25K5Z9GV;
-				INFOPLIST_FILE = AUTOmation/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/AUTOmation/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,23 +527,77 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilyagru.AUTOmation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		EC6B400521A8934200F05E61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AUTOmation/Resources/AUTOmation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RT25K5Z9GV;
-				INFOPLIST_FILE = AUTOmation/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/AUTOmation/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilyagru.AUTOmation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EC6B405921A8ADD200F05E61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GoToWorkIntent/Resources/GoToWorkIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RT25K5Z9GV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GoToWorkIntent/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyagru.AUTOmation.GoToWorkIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC6B405A21A8ADD200F05E61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GoToWorkIntent/Resources/GoToWorkIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RT25K5Z9GV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GoToWorkIntent/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyagru.AUTOmation.GoToWorkIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,6 +620,15 @@
 			buildConfigurations = (
 				EC6B400421A8934200F05E61 /* Debug */,
 				EC6B400521A8934200F05E61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC6B405821A8ADD200F05E61 /* Build configuration list for PBXNativeTarget "GoToWorkIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6B405921A8ADD200F05E61 /* Debug */,
+				EC6B405A21A8ADD200F05E61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
