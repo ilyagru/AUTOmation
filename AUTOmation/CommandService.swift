@@ -85,35 +85,40 @@ final class CommandService {
 
         operationQueue.addOperation { [weak self] in
             self?.sendCommand(doorUnlock, completion: { result in
-                if case CommandService.CommandResult.success = result {
-
-                } else if case CommandService.CommandResult.failure(let error) = result {
+                switch result {
+                case .success:
+                    break
+                case .failure(let error):
                     completion(.failure(error))
                 }
             })
         }
         operationQueue.addOperation { [weak self] in
             self?.sendCommand(engine, completion: { result in
-                if case CommandService.CommandResult.success = result {
-
-                } else if case CommandService.CommandResult.failure(let error) = result {
+                switch result {
+                case .success:
+                    break
+                case .failure(let error):
                     completion(.failure(error))
                 }
             })
         }
         operationQueue.addOperation { [weak self] in
             self?.sendCommand(lights, completion: { result in
-                if case CommandService.CommandResult.success = result {
-
-                } else if case CommandService.CommandResult.failure(let error) = result {
+                switch result {
+                case .success:
+                    break
+                case .failure(let error):
                     completion(.failure(error))
                 }
             })
         }
         operationQueue.addOperation { [weak self] in
             self?.sendCommand(climate, completion: { result in
-                if case CommandService.CommandResult.success = result {
-                } else if case CommandService.CommandResult.failure(let error) = result {
+                switch result {
+                case .success:
+                    break
+                case .failure(let error):
                     completion(.failure(error))
                 }
             })
@@ -121,8 +126,10 @@ final class CommandService {
         let directionsOperation = Operation()
         directionsOperation.completionBlock = { [weak self] in
             self?.sendCommand(directions, completion: { result in
-                if case CommandService.CommandResult.success = result {
-                } else if case CommandService.CommandResult.failure(let error) = result {
+                switch result {
+                case .success:
+                    break
+                case .failure(let error):
                     completion(.failure(error))
                 }
             })
@@ -130,13 +137,15 @@ final class CommandService {
         let screenOperation = Operation()
         screenOperation.completionBlock = { [weak self] in
             self?.sendCommand(screen, completion: { result in
-                if case CommandService.CommandResult.success = result {
-                } else if case CommandService.CommandResult.failure(let error) = result {
+                switch result {
+                case .success:
+                    break
+                case .failure(let error):
                     completion(.failure(error))
                 }
             })
         }
-        // It seems that image will not be shown if a destination is setlater
+        // It seems that the image will not be shown if a destination is set later
         // Updating screen after setting up navigation
         screenOperation.addDependency(directionsOperation)
         operationQueue.addOperation(directionsOperation)
@@ -158,48 +167,60 @@ final class CommandService {
 
         operationQueue.addOperation { [weak self] in
             self?.sendCommand(engine, completion: { result in
-                if case CommandService.CommandResult.success = result {
-                } else if case CommandService.CommandResult.failure(let error) = result {
+                switch result {
+                case .success:
+                    break
+                case .failure(let error):
                     completion(.failure(error))
                 }
             })
         }
         operationQueue.addOperation { [weak self] in
             self?.sendCommand(doorUnlock, completion: { result in
-                if case CommandService.CommandResult.success = result {
-                } else if case CommandService.CommandResult.failure(let error) = result {
+                switch result {
+                case .success:
+                    break
+                case .failure(let error):
                     completion(.failure(error))
                 }
             })
         }
         operationQueue.addOperation { [weak self] in
             self?.sendCommand(lights, completion: { result in
-                if case CommandService.CommandResult.success = result {
-                } else if case CommandService.CommandResult.failure(let error) = result {
+                switch result {
+                case .success:
+                    break
+                case .failure(let error):
                     completion(.failure(error))
                 }
             })
         }
         operationQueue.addOperation { [weak self] in
             self?.sendCommand(directions, completion: { result in
-                if case CommandService.CommandResult.success = result {
-                } else if case CommandService.CommandResult.failure(let error) = result {
+                switch result {
+                case .success:
+                    break
+                case .failure(let error):
                     completion(.failure(error))
                 }
             })
         }
         operationQueue.addOperation { [weak self] in
             self?.sendCommand(screen, completion: { result in
-                if case CommandService.CommandResult.success = result {
-                } else if case CommandService.CommandResult.failure(let error) = result {
+                switch result {
+                case .success:
+                    break
+                case .failure(let error):
                     completion(.failure(error))
                 }
             })
         }
         operationQueue.addOperation { [weak self] in
             self?.sendCommand(climate, completion: { result in
-                if case CommandService.CommandResult.success = result {
-                } else if case CommandService.CommandResult.failure(let error) = result {
+                switch result {
+                case .success:
+                    break
+                case .failure(let error):
                     completion(.failure(error))
                 }
             })

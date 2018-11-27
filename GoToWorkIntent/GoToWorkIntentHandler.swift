@@ -16,7 +16,7 @@ final class GoToWorkIntentHandler: NSObject, GoToWorkIntentHandling {
 
     // Required method to implement
     func handle(intent: GoToWorkIntent, completion: @escaping (GoToWorkIntentResponse) -> Void) {
-        // Prepare
+        // Turn on everything in the car
         commandService.sendGoToWorkCommands { result in
             switch result {
             case .failure(let error):

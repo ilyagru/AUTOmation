@@ -25,7 +25,7 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // To save download certificates and save the serial
+        // To save downloaded certificates and the serial
         commandService.setup(for: nil) { (serial) in
             if let serial = serial {
                 print("SETUP SUCCESS", serial)
@@ -41,7 +41,7 @@ final class ViewController: UIViewController {
     // MARK: - Actions
 
     @IBAction func reverseIntent(_ sender: UIButton) {
-        // Reset
+        // Turn off everything in the car
         commandService.reverseSendGoToWorkCommands { result in
             switch result {
             case .failure(let error):
