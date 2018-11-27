@@ -1,5 +1,7 @@
 # Demo app for the __High Mobility Hack__ hackathon
 
+<img src="AUTOmation-screenshot-siri.jpg" alt="iOS Siri screenshot" width="250">
+
 ## Description
 
 App for integration with _Apple Siri_ to be able to use it with the Voice Assistant or Siri Shortcuts and automate your day to day tasks. You don't even need any user interface. As a demo, it supports only one scenario - Preparing a car to go to work.
@@ -9,6 +11,8 @@ The idea and implementation are finished by [Ilya Gruzhevski](https://github.com
 The business presentation (pitch) could be shared on demand.
 
 ## How it works
+
+Video is in the repo.
 
 ![Video](/AUTOmation-video.mov?raw=true)
 
