@@ -8,7 +8,9 @@ App for integration with _Apple Siri_ to be able to use it with the Voice Assist
 
 The idea and implementation are finished by [Ilya Gruzhevski](https://github.com/ilyagru) in 24 hours participating in [Tallinn Mobility Hack](https://mobilityhack.splashthat.com).
 
-The business presentation (pitch) could be shared on demand.
+Presentation (keynote) is in the repo
+
+![Keynote](/AUTOmation-presentation.key?raw=true)
 
 ## How it works
 
